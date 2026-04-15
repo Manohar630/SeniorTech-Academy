@@ -60,5 +60,19 @@ Judging checklist (map to criteria)
 
 ---
 
-Want me to:
-- generate a 1-minute demo script and export a one-page PDF pitch from this file? (I can add a `scripts/generate_pdf.js` and produce the PDF.)
+**Deploying / Live demo**
+
+- **Vercel (recommended):** This project is ready for Vercel. A `vercel.json` file and a GitHub Actions workflow have been added to enable automated deploys on pushes to `main`.
+- **Setup steps:** add the following repository secrets in GitHub: `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`. Then push to `main` to trigger the workflow, or connect the repo in the Vercel dashboard for one-click deployments.
+- **Manual deploy (local):**
+
+```bash
+npm install
+npm run build
+npx vercel --prod
+```
+
+If you prefer the Vercel dashboard, visit https://vercel.com, import the repository, and Vercel will detect the `npm run build` script automatically.
+
+_Deployment trigger: commit pushed to initiate automated deploy._
+
