@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+.DS_Store
+.vscode/
+public/logo-*.png
+public/favicon-64.png

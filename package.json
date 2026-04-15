@@ -1,0 +1,19 @@
+{
+  "name": "seniortech-academy",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "canvas-confetti": "^1.6.0",
+    "vite": "^8.0.8"
+  },
+  "dependencies": {
+    "canvas": "^3.2.3",
+    "sharp": "^0.34.5"
+  }
+}
